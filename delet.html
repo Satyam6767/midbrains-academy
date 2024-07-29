@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizontal Image Rotation</title>
+    <style>
+        body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-row {
+    display: flex;
+    animation: scroll 10s linear infinite;
+}
+
+.rotating-image {
+    width: 100px;
+    height: 100px;
+    margin: 0 10px;
+    object-fit: cover;
+    border-radius: 50%;
+    animation: rotate 2s linear infinite;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image-row">
+            <img src="image1.jpg" alt="Image 1" class="rotating-image">
+            <img src="image2.jpg" alt="Image 2" class="rotating-image">
+            <img src="image3.jpg" alt="Image 3" class="rotating-image">
+            <img src="image4.jpg" alt="Image 4" class="rotating-image">
+            <img src="image5.jpg" alt="Image 5" class="rotating-image">
+            <img src="image6.jpg" alt="Image 6" class="rotating-image">
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
