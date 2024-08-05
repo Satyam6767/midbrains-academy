@@ -623,7 +623,7 @@
 		text-align: center;
 	}
 	.container {
-		max-width: 320px
+		max-width: 360px
 	}
 	.header-logo-menu.sticker.stick {
 		position: static;
@@ -1315,7 +1315,7 @@
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
 	.container {
-		max-width: 450px
+		max-width: 580px
 	}
 	.hero-slider-content {
 		max-width: 320px;

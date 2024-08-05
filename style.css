@@ -317,6 +317,10 @@ mark {
 	padding: 100px 0;
 }
 
+.section-padding-new{
+	padding: 30px;
+}
+
 .section-bottom-padding {
 	padding: 0 0 70px 0;
 }
@@ -2259,6 +2263,13 @@ textarea {
 	justify-content: space-between;
 }
 
+@media (max-width:768px){
+	.why-choose-card-parent {
+		justify-content: center;
+	}
+	
+}
+
 .why-choose-inner {
 	display: flex;
 	justify-content: center;
@@ -2292,7 +2303,7 @@ textarea {
 
 .why-choose-inner {
 	/* border: 1px solid red; */
-	background: #fff;
+	background: #f1ecec;
 	border-radius: 10px;
 	box-shadow: 0 1px 18px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
 	transition: transform 0.3s, box-shadow 0.3s;
@@ -4281,7 +4292,7 @@ textarea {
 
 .breadcrumb-bar .breadcrumb>li:first-child:before {
 	border-radius: 50%;
-	content: "";
+	/* content: ""; */
 	display: inline-block;
 	font-family: "Material-Design-Iconic-Font";
 	font-size: 18px;
@@ -6170,3 +6181,186 @@ margin-right: 10px;
 }
 
 
+.fa-angle-right{
+	margin-right: 17px;
+}
+
+
+
+/* mern */
+
+.mern-h1{
+	text-align: center;
+    padding-bottom: 30px;
+    color: #253463;
+    text-decoration: underline;
+    font-weight: 600;
+	margin: 0px;
+}
+.animate-h4 {
+	margin-bottom: 16px;
+	animation-name: highlight-h4;
+	animation-duration: 2s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+@keyframes highlight {
+	0% {
+	  background-color: yellow;
+	}
+	100% {
+		
+	  background-color: transparent;
+	}
+  }
+  
+  .animate-h4 {
+	animation: highlight 2s infinite linear;
+	padding: 5px;
+	width: 40%;
+  }
+.events-details-img1 p{
+	font-size: 16px;
+}
+
+.events-details-img1 li{
+	margin-bottom: 10px;
+	word-spacing: 6px;
+}
+
+.fa-hand-o-right{
+	margin-right: 20px;
+}
+
+
+.fa-plus{
+	float: inline-end;
+	margin-right: 35px;
+}
+
+
+
+
+
+
+
+/*--------------------------------------------------------------
+# Frequently Asked Questions Section
+--------------------------------------------------------------*/
+.faq .content h3 {
+    font-weight: 400;
+    font-size: 34px;
+  }
+  
+  .faq .content h4 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 5px;
+  }
+  
+
+  .faq .accordion-item {
+    border: 0;
+    margin-bottom: 5px;
+    box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.06);
+    border-radius: 10px;
+  }
+  
+  .faq .accordion-item:last-child {
+    margin-bottom: 0;
+  }
+  
+  .faq .accordion-collapse {
+    border: 0;
+  }
+  
+  .faq .accordion-button {
+    padding: 13px 50px 13px 33px;
+    font-weight: 600;
+    border: 0;
+    font-size: 15px;
+    line-height: 20px;
+    color: var(--color-default);
+    text-align: left;
+    background: #fff;
+    box-shadow: none;
+    border-radius: 10px;
+  }
+  
+  .faq .accordion-button .num {
+    padding-right: 15px;
+
+    font-size: 15px;
+    line-height: 0;
+    color: var(--color-primary);
+  }
+  
+  .faq .accordion-button:not(.collapsed) {
+    color: var(--color-primary);
+    border-bottom: 0;
+    box-shadow: none;
+  }
+  
+  .faq .accordion-button:after {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+  
+  .faq .accordion-body {
+    padding: 0 40px 30px 45px;
+    border: 0;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: none;
+    font-size: 14px;
+  }
+  
+
+.accordion-button{
+	display: flow;
+	padding-left: 50px;
+	height: 45px;
+}
+
+.accordion-button:hover{
+	background-color: #69b4a499;
+}
+
+.fa-angle-down{
+	margin-left: 25px;
+}
+
+.fa-chevron-circle-right{
+color: blue;
+margin-right: 20px;
+animation-name: inner-anim;
+animation-duration: 2s;
+animation-iteration-count: infinite;
+animation-timing-function: linear;
+}
+
+@keyframes inner-anim {
+	0%{
+		transform: rotate(0deg);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+	
+}
+
+.accordion-body{
+	margin: 5px 15px;
+	
+}
+
+.accordion-collapse{
+	background-color: skyblue;
+}
+
+.accordion-body li{
+	font-size: 15px;
+	line-height: 30px;
+}
