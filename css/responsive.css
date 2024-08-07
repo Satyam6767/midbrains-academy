@@ -275,6 +275,7 @@
 	}
 	.header-logo-menu.fixed .search-menu i#toggle-search {
 		color: #2d3e50;
+		display: none;
 	}
 	.header-top:before {
 		width: 48%;
@@ -300,6 +301,8 @@
 		font-size: 14px;
 		font-weight: 400;
 	}
+
+	
 	.about-area.mt-95 {
 		margin-top: 55px;
 	}
@@ -1337,5 +1340,12 @@
 		line-height: 29px;
 		padding-top: 10px;
 		width: 80px;
+	}
+}
+
+
+@media (max-width:991px) {
+	.header-logo-menu.sticker{
+		display: none;
 	}
 }

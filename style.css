@@ -960,7 +960,7 @@ mark {
 }
 
 .header-top span {
-	padding: 20px 0;
+	padding: 15px 0;
 	display: inline-block;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 13px;
@@ -1646,14 +1646,20 @@ mark {
 }
 
 .mean-container .mean-bar:before {
-	color: #fff;
-	content: "MENU";
-	font-size: 18px;
-	font-weight: 600;
-	left: 0;
-	position: absolute;
-	top: 13px;
+    content: "";
+    display: inline-block;
+    width: 140px; /* Adjust the width to fit your image */
+    height: 37px; /* Adjust the height to fit your image */
+    background-image: url('./img/logo/footer-logo.png'); /* Replace with the path to your image */
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: 0;
+    position: absolute;
+    top: 3px;
 }
+
+
+
 
 /*----------------------------------------*/
 
@@ -6062,7 +6068,7 @@ input.checkbox {
 .placedstu {
 	display: flex;
 	animation-name: student-animation;
-	animation-duration: 10s;
+	animation-duration: 14s;
 	animation-timing-function: linear;
 	animation-iteration-count: infinite;
 
@@ -6093,7 +6099,7 @@ input.checkbox {
 .placedstu2 {
 	display: flex;
 	animation-name: student-animation2;
-	animation-duration: 10s;
+	animation-duration: 14s;
 	animation-timing-function: linear;
 	animation-iteration-count: infinite;
 	margin-top: 25px;
@@ -6364,3 +6370,124 @@ animation-timing-function: linear;
 	font-size: 15px;
 	line-height: 30px;
 }
+
+.highlight-till-text{
+	background-color: #4ba6f1;
+	color: white;
+}
+
+/* placements */
+
+.placement-pocess img{
+	width: 100%;
+}
+
+
+
+
+
+
+/*--------------------------------------------------------------
+# Frequently Asked Questions Section
+--------------------------------------------------------------*/
+.faq .content h3 {
+    font-weight: 400;
+    font-size: 34px;
+  }
+  
+  .faq .content h4 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 5px;
+  }
+  
+
+  .faq .accordion-item {
+    border: 0;
+    margin-bottom: 5px;
+    box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.06);
+    border-radius: 10px;
+  }
+  
+  .faq .accordion-item:last-child {
+    margin-bottom: 0;
+  }
+  
+  .faq .accordion-collapse {
+    border: 0;
+  }
+  
+  .faq .accordion-button {
+    padding: 13px 50px 13px 13px;
+    font-weight: 600;
+    border: 0;
+    font-size: 15px;
+    line-height: 20px;
+    color: var(--color-default);
+    text-align: left;
+    background: #fff;
+    box-shadow: none;
+    border-radius: 10px;
+  }
+  
+  .faq .accordion-button .num {
+    padding-right: 15px;
+
+    font-size: 15px;
+    line-height: 0;
+    color: var(--color-primary);
+  }
+  
+  .faq .accordion-button:not(.collapsed) {
+    color: var(--color-primary);
+    border-bottom: 0;
+    box-shadow: none;
+  }
+  
+  .faq .accordion-button:after {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+  
+  .faq .accordion-body {
+    padding: 0 40px 30px 45px;
+    border: 0;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: none;
+    font-size: 14px;
+  }
+  
+
+  .place-accordion-collapse{
+	background-color: white;
+  }
+
+  .place-cont h3{
+	font-size: 38px;
+	padding: 55px 0px;
+  }
+
+  .faq-h3{
+	padding: 55px 0px;
+  }
+
+  .place-assi p{
+	line-height: 29px;
+	font-size: 19px;
+  }
+
+
+
+  p{
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+
+  @media (max-width:991px) {
+	.img-100perc{
+		width: 200px;
+		height: 245px;
+		margin-bottom: 30px;
+	}
+  }
