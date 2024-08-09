@@ -6193,6 +6193,11 @@ margin-right: 10px;
 
 
 
+
+
+
+
+
 /* mern */
 
 .mern-h1{
@@ -6471,17 +6476,39 @@ animation-timing-function: linear;
 
   .faq-h3{
 	padding: 55px 0px;
+
   }
 
   .place-assi p{
 	line-height: 29px;
 	font-size: 19px;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   }
 
 
 
-  p{
-	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+
+  .plac-btn{
+	margin: 5px 0px;
+	background-color: #d2c753;
+    color: black;
+	width: 190px;
+	
+	border-radius: 10px;
+	font-weight: 600;
+	transition: 0.7s linear background-color , 0.7s linear color;
+  }
+
+
+  .plac-btn:hover{
+	background-color: #f65454;
+	color: white;
+	
+  }
+
+  .place-assi h3{
+	text-decoration: wavy;
   }
 
   @media (max-width:991px) {
@@ -6490,4 +6517,121 @@ animation-timing-function: linear;
 		height: 245px;
 		margin-bottom: 30px;
 	}
+
+	.plac-btn{
+		width: 100%;
+	}
+
+  }
+
+
+
+
+
+  /* Internship */
+
+  .intenship-hero{
+	position: relative;
+    width: 100%;
+    height: 525px; 
+    overflow: hidden;
+	display: flex;
+	align-items: center;
+  }
+
+  .intenship-hero::before{
+	content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./img/internship/14929.jpg'); /* Replace with your image */
+    background-size: cover;
+    background-position: center;
+    filter: blur(1px) brightness(0.4); /* Adjust filter as needed */
+    /* z-index: 1; */
+
+  }
+
+
+
+
+
+  
+  
+
+  @media (max-width:1000px){
+	.intenship-hero{
+		
+		height: 1050px;
+		
+	}
+
+	
+
+	
+  }
+
+
+
+  .left-intern{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+  }
+
+
+  .golden{
+	color: #F5B01F;
+	font-size: 39px;
+	line-height: 45px;
+	font-weight: 700;
+  }
+
+
+  .left-intern h1{
+	color: white;
+	font-size: 39px;
+	line-height: 45px;
+	font-weight: 700;
+	letter-spacing: 3px;
+	text-shadow:
+    -3px -3px 0 black,   /* top-left shadow */
+3px -3px 0 black,    /* top-right shadow */
+    -3px 3px 0 black,    /* bottom-left shadow */
+    3px 3px 0 black; 
+
+	padding: 5px 0px;
+  }
+
+
+  .left-intern p{
+	padding: 5px 0px;
+	color: wheat;
+	line-height: 30px;
+	font-size: 16px;
+	text-shadow:
+    -1px -1px 0 black,   /* top-left shadow */
+    1px -1px 0 black,    /* top-right shadow */
+    -1px 1px 0 black,    /* bottom-left shadow */
+    1px 1px 0 black; 
+	
+
+	
+  }
+
+
+  .left-intern button{
+	background-color: #1c3364;
+	margin: 5px 0px;
+	width: 200px;
+	padding: 10px 10px;
+	border: 1px solid white;
+	border-radius: 0px;
+  }
+
+  .left-intern button:hover{
+	background-color: #F5B01F;
+	color: black;
   }
