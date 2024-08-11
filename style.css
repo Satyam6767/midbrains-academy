@@ -1746,13 +1746,18 @@ mark {
 	line-height: 64px;
 	padding-bottom: 20px;
 	font-weight: 700;
+	text-shadow:
+    -3px -3px 0 black,   
+	3px -3px 0 black,    
+    -3px 3px 0 black,    
+    3px 3px 0 black; 
 }
 
 .hero-slider-content>p {
 	font-size: 16px;
 	font-weight: 500;
 	color: #fff;
-	line-height: 28px;
+	line-height: 35px;
 	max-width: 610px;
 }
 
@@ -6556,6 +6561,11 @@ animation-timing-function: linear;
 
 
 
+  @media (max-width:1200px){
+	.intenship-hero{
+		height: 650px
+	}
+  }
 
 
   
@@ -6564,13 +6574,9 @@ animation-timing-function: linear;
   @media (max-width:1000px){
 	.intenship-hero{
 		
-		height: 1050px;
+		height: 880px;
 		
 	}
-
-	
-
-	
   }
 
 
@@ -6597,9 +6603,9 @@ animation-timing-function: linear;
 	font-weight: 700;
 	letter-spacing: 3px;
 	text-shadow:
-    -3px -3px 0 black,   /* top-left shadow */
-3px -3px 0 black,    /* top-right shadow */
-    -3px 3px 0 black,    /* bottom-left shadow */
+    -3px -3px 0 black,   
+	3px -3px 0 black,    
+    -3px 3px 0 black,    
     3px 3px 0 black; 
 
 	padding: 5px 0px;
@@ -6612,9 +6618,9 @@ animation-timing-function: linear;
 	line-height: 30px;
 	font-size: 16px;
 	text-shadow:
-    -1px -1px 0 black,   /* top-left shadow */
-    1px -1px 0 black,    /* top-right shadow */
-    -1px 1px 0 black,    /* bottom-left shadow */
+    -1px -1px 0 black,   
+    1px -1px 0 black,    
+    -1px 1px 0 black,   
     1px 1px 0 black; 
 	
 
@@ -6635,3 +6641,199 @@ animation-timing-function: linear;
 	background-color: #F5B01F;
 	color: black;
   }
+
+  @media (max-width:768px) {
+	.intenship-hero{
+		height: 1060px;
+	}
+	.left-intern h1, golden{
+		font-size: 35px;
+		padding-top: 30px;
+		text-align: center;
+	}
+
+	.left-intern{
+		align-items: center;
+	  }
+
+  }
+
+  @media (max-width:590px) {
+	.intenship-hero{
+		height: 1060px;
+	}
+
+	.new-interns-cont{
+		padding: 0px 0px;
+	}
+  }
+
+
+  @media (max-width:390px) {
+
+	.left-intern h1, golden{
+		font-size: 27px;
+		padding-top: 30px;
+		text-align: center;
+	}
+	.intenship-hero{
+		height: 1170px;
+	}
+
+	.new-interns-cont{
+		padding: 0px 0px;
+	}
+  }
+
+
+  .second-sec-int{
+	padding: 60px 0px 5px 0px;
+  }
+
+  .colmd7{
+	background-color: #1F3971;
+    color: white;
+    padding: 38px 55px;
+	display: flex;
+    align-items: center;
+  }
+
+  .contfluid{
+	padding: 0px;
+  }
+
+  .colmd5{
+	padding: 0px;
+  }
+
+  @media (min-width: 991px) and (max-width: 1135px) {
+	.colmd5 img{
+	min-height: 400px;
+}
+  }
+
+.innerarticle h1{
+	color: white;
+	font-weight: 700;
+	/* margin-bottom: 18px; */
+}
+
+.innerarticle h5{
+	color: white;
+	padding-bottom: 0px;
+}
+
+.innerarticle li{
+	color: #8cf9de;
+	font-size: 16px;
+	padding-bottom: 7px;
+	list-style-type: square;
+}
+
+.innerarticle li strong{
+	font-size: 16px;
+	padding-bottom: 0px;
+}
+
+.why-chose-int img{
+	 height: 100px;
+	 width: 100px;
+	 border: 2px solid black;
+	 border-radius: 50%;
+}
+
+.in-card-center{
+	border: 1px solid black;
+	display: flex;
+	border-radius: 0px;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 62px 4px;
+	background-color: #1F3971;
+}
+
+
+
+.in-card-center:hover{
+	background-color: #13203b;
+	cursor:default;
+	color: white;
+}
+
+@media (max-width:768px) {
+	.in-card-center{
+	padding: 34px 3px;	
+	}
+}
+
+.in-card-center2{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding-top: 35px;
+	padding-bottom: 0px;
+}
+
+.in-card-center p{
+	text-align: center;
+	color: white;
+}
+
+.in-card-center h5{
+	font-weight: 700;
+	color: #FFAE27;
+	font-size: 24px;
+	padding-bottom: 15px;
+}
+
+
+
+.for-r-p{
+	margin-bottom: 0px;
+}
+
+.intr-img{
+	width: 60px;
+	height: 60px;
+}
+
+.li-row-inter li{
+	margin: 22px 0px;
+	display: flex;
+	align-items: stretch;
+}
+
+.li-row-inter li img{
+	margin-right: 55px;
+}
+
+.li-row-inter li p{
+	margin: 0px;
+}
+
+
+
+.li-p1 {
+	/* padding-right: 55px; */
+	width: 150px;
+	
+}
+
+.newdi{
+	display: flex;
+	align-items: center;
+}
+
+.newdi p{
+	font-weight: 800;
+}
+
+.new-bgwhite{
+	padding-bottom: 35px;
+}
+
+.for-r-p{
+	margin-bottom: 0px;
+}
