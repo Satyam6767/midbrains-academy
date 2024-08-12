@@ -6837,3 +6837,175 @@ animation-timing-function: linear;
 .for-r-p{
 	margin-bottom: 0px;
 }
+
+@media (max-width:490px) {
+	.new-center-h5 h5{
+		text-align: center;
+	}
+}
+
+
+
+
+
+.container-fluid.full-img {
+	height: 520px;
+	background-size: cover;
+	background-position: left;
+	padding: 100px 0;
+	color: #fff;
+  }
+  
+  .career-hero-container {
+	margin: 0 auto;
+	padding: 0 15px;
+  }
+  
+  .career-hero-row {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+  }
+  
+  
+  .career-head {
+	text-align: left;
+  }
+  
+  .career-head h1 {
+	font-size: 48px;
+	color: white;
+	margin-bottom: 20px;
+	font-weight: 800;
+	word-spacing: 5px;
+	padding-right: 30px;
+  }
+  
+  .career-head h3 {
+	font-size: 24px;
+	font-weight: 300;
+	color: wheat;
+	margin: 45px 0px;
+  }
+  
+  
+  .career-btn {
+	margin-top: 25px;
+	padding: 10px 35px;
+	background-color: #F4A012;
+	color: white;
+	margin-top: 58px;
+  
+  }
+  
+  
+  
+  
+  /* Responsive Styles */
+  @media (max-width: 320px) {
+  
+	.career-hero-col-7,
+	.career-hero-col-5 {
+	  flex: 0 0 100%;
+	  max-width: 100%;
+	}
+  
+	.container-fluid.full-img {
+	  background-size: cover;
+	  padding-top: 25px;
+	}
+  
+	.career-head h1 {
+	  font-size: 36px;
+	  padding-right: 0px;
+	}
+  
+	.career-head h3 {
+	  font-size: 20px;
+	}
+  
+	.career-btn {
+	  width: 100%;
+  
+	}
+  }
+  
+  @media (max-width: 425px) {
+  
+	.col-md-7,
+	.col-md-5 {
+	  flex: 0 0 100%;
+	  max-width: 100%;
+	}
+  
+	.container-fluid.full-img {
+	  background-size: cover;
+	  /*background-position: left; Ensure the image is positioned to show the blue on the left */
+	  padding-top: 40px;
+	  /* Adjust padding for top and bottom spacing */
+	}
+  
+	.career-head h1 {
+	  font-size: 40px;
+	  padding-right: 0px;
+	}
+  
+	.career-head h3 {
+	  font-size: 23px;
+	}
+  }
+  
+  @media (max-width: 768px) {
+  
+	.col-md-7,
+	.col-md-5 {
+	  flex: 0 0 100%;
+	  max-width: 100%;
+	}
+  
+	.container-fluid.full-img {
+	  padding-top: 50px;
+	}
+  
+	.career-head h1 {
+		
+	  font-size: 40px;
+	  padding-right: 0px;
+	}
+  
+	.career-head h3 {
+	  font-size: 23px;
+	}
+  }
+
+
+  @media (min-width: 768px) and (max-width: 999px) {
+	.career-head h3 {
+		margin: 10px 0px;
+		margin-bottom: 45px;
+	}
+
+	.career-btn {
+		margin-top: 15px;
+	}
+  }
+  
+  
+
+  @media (max-width:626px) {
+	.place-assi h3 {
+		text-align: center;
+		font-size: 27px;
+	}
+
+
+	.place-cont h3{
+		text-align: center;
+		font-size: 27px;
+	}
+
+	.faq .content h3 {
+		text-align: center;
+		font-size: 27px;
+	}
+  }
