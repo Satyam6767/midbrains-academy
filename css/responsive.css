@@ -626,7 +626,7 @@
 		text-align: center;
 	}
 	.container {
-		max-width: 360px
+		/* max-width: 360px */
 	}
 	.header-logo-menu.sticker.stick {
 		position: static;

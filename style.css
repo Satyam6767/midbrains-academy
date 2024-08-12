@@ -7009,3 +7009,20 @@ animation-timing-function: linear;
 		font-size: 27px;
 	}
   }
+
+  @media (max-width:999px) {
+  .mobile-menu-area {
+	padding: 7px 0px;
+  }
+}
+
+
+@media (max-width:550px) {
+.section-padding-new {
+	padding: 0px;
+
+	.section-padding-new .container{
+		padding: 5px 0px;
+	}
+}
+}
