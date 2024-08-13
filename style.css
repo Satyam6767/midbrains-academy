@@ -7096,4 +7096,33 @@ animation-timing-function: linear;
 .newheight-col{
 	height: auto;
 }
+
+.animate-h4 {
+	width: 70%;
+}
+}
+
+
+
+@media (max-width:425px) {
+.animate-h4 {
+	width: 100%;
+}
+
+
+.accordion-button{
+	padding-left: 10px;
+}
+}
+
+
+@media (max-width:345px) {
+	.breadcrumb-bar .breadcrumb{
+		flex-wrap: nowrap;
+	}
+
+	.breadcrumb-bar li {
+        display: flex;
+    }
+	
 }
