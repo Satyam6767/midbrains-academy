@@ -346,3 +346,43 @@ $('.gallery-area').imagesLoaded(function () {
 
     
 })(jQuery); 
+
+
+
+
+
+
+const form = document.querySelector("form");
+const fullname = document.getElementById("name");
+const phone = document.getElementById("phone");
+const email = document.getElementById("email");
+const message = document.getElementById("message");
+
+function sendEmail(){
+    const bodymessage = `Full Name: ${fullname.value} <br> Phone: ${phone.value} <br> Email: ${email.value} <br> Message: ${message.value}`
+    Email.send({
+        Host : "smtp.elasticemail.com",
+        Username : "satyamkumar6767@gmail.com",
+        Password : "60E31A905E32824F56AD44A64D2F25C7D756",
+        To : 'satyamkumar6767@gmail.com',
+        From : "satyamkumar6767@gmail.com",
+        Subject : "Contact form",
+        Body : bodymessage
+    }).then(
+      message => {
+        if (message == "OK"){
+            Swal.fire({
+                title: "Success!",
+                text: "Message Sent Successfully!",
+                icon: "success"
+              });
+        }
+      }
+        
+    );
+}
+
+form.addEventListener("submit", (e)=>{
+    e.preventDefault();
+    sendEmail();
+})

@@ -5,13 +5,13 @@
 <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Contact || Edubuzz</title>
+        <title>Contact || Midbrains Technologies Academy</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
         
 		<!-- favicon
 		============================================ -->		
-        <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+        <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
 	   
 		<!-- Bootstrap CSS
 		============================================ -->		
@@ -229,26 +229,26 @@
                            <div class="col-md-12 col-lg-6 yellow-bg">
                                 <div class="contact-form-wrap">
                                     <h2 class="contact-title">SEND YOUR MESSAGE</h2>
-                                    <form id="contact-form" action="https://htmldemo.net/edubuzz/edubuzz/mail.php" method="post">
+                                    <form id="contact-form"  method="post">
                                         <div class="row">
                                             <div class="col-12">
                                                 <div class="contact-form-style mb-20">
-                                                    <input name="name" placeholder="Name*" type="text">
+                                                    <input name="name" id="name" placeholder="Name*" type="text" required>
                                                 </div>
                                             </div>
                                             <div class="col-12">
                                                 <div class="contact-form-style mb-20">
-                                                    <input name="phone" placeholder="Phone*" type="text">
+                                                    <input name="phone" id="phone" placeholder="Phone*" type="text" required>
                                                 </div>
                                             </div>
                                             <div class="col-12">
                                                 <div class="contact-form-style mb-20">
-                                                    <input name="email" placeholder="Email*" type="email">
+                                                    <input name="email" id="email" placeholder="Email*" type="email"required>
                                                 </div>
                                             </div>
                                             <div class="col-md-12">
                                                 <div class="contact-form-style">
-                                                    <textarea name="message" placeholder="Type your message here.."></textarea>
+                                                    <textarea name="message" id="message" placeholder="Type your message here.."></textarea>
                                                     <button class="button-default" type="submit"><span>Send Email</span></button>
                                                 </div>
                                             </div>
@@ -309,7 +309,7 @@
                                 <div class="col-lg-3 col-md-6">
                                     <div class="single-footer-widget">
                                         <div class="footer-logo">
-                                            <a href="index.html"><img src="img/logo/footer-logo.png" alt=""></a>
+                                            <a href="index.html"><img src="img/logo/aaaa.jpeg" alt="some-image"></a>
                                         </div>
                                         <p>Join our institute for comprehensive training, placement, and internships to advance your career successfully. </p>
                                         <div class="social-icons">
@@ -388,7 +388,11 @@
         </div>    
         <!--End of Main Wrapper Area--> 
         
-        
+        <script src="https://smtpjs.com/v3/smtp.js">
+        </script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
         
 		<!-- jquery
 		============================================ -->		
