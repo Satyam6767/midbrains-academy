@@ -363,7 +363,7 @@ function sendEmail(){
     Email.send({
         Host : "smtp.elasticemail.com",
         Username : "midbrainsacademy@gmail.com",
-        Password : "1C29A450521C55BA83293B913222C51A2C4F",
+        Password : "954CDE282D02FF63F997AB0E1D33D2F4A2BD",
         To : 'midbrainsacademy@gmail.com',
         From : "midbrainsacademy@gmail.com",
         Subject : "Contact form",
