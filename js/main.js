@@ -386,3 +386,42 @@ form.addEventListener("submit", (e)=>{
     e.preventDefault();
     sendEmail();
 })
+
+
+
+
+
+// ==================================================================
+
+
+const footerform = document.querySelector(".footer-form");
+const commonphone = document.getElementById("commonphone");
+
+function sendEmail2(){
+    const bodymessage = ` Phone: ${commonphone.value} `
+    Email.send({
+        Host : "smtp.elasticemail.com",
+        Username : "midbrainsacademy@gmail.com",
+        Password : "954CDE282D02FF63F997AB0E1D33D2F4A2BD",
+        To : 'midbrainsacademy@gmail.com',
+        From : "midbrainsacademy@gmail.com",
+        Subject : "Contact form",
+        Body : bodymessage
+    }).then(
+      message => {
+        if (message == "OK"){
+            Swal.fire({
+                title: "Success!",
+                text: "Message Sent Successfully!",
+                icon: "success"
+              });
+        }
+      }
+        
+    );
+}
+
+footerform.addEventListener("submit", (e)=>{
+    e.preventDefault();
+    sendEmail2();
+})
