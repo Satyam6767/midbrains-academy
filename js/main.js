@@ -352,76 +352,96 @@ $('.gallery-area').imagesLoaded(function () {
 
 
 
-const form = document.querySelector("form");
-const fullname = document.getElementById("name");
-const phone = document.getElementById("phone");
-const email = document.getElementById("email");
-const message = document.getElementById("message");
+// Select all forms on the page
+const forms = document.querySelectorAll("form");
 
-function sendEmail(){
-    const bodymessage = `Full Name: ${fullname.value} <br> Phone: ${phone.value} <br> Email: ${email.value} <br> Message: ${message.value}`
-    Email.send({
-        Host : "smtp.elasticemail.com",
-        Username : "midbrainsacademy@gmail.com",
-        Password : "954CDE282D02FF63F997AB0E1D33D2F4A2BD",
-        To : 'midbrainsacademy@gmail.com',
-        From : "midbrainsacademy@gmail.com",
-        Subject : "Contact form",
-        Body : bodymessage
-    }).then(
-      message => {
-        if (message == "OK"){
-            Swal.fire({
-                title: "Success!",
-                text: "Message Sent Successfully!",
-                icon: "success"
-              });
+forms.forEach((form) => {
+    // Select input fields within the current form
+    const fullname = form.querySelector("#name");
+    const phone = form.querySelector("#phone");
+    const email = form.querySelector("#email");
+    const message = form.querySelector("#message");
+
+    // Ensure all input fields exist before proceeding
+    if (fullname && phone && email && message) {
+        function sendEmail() {
+            const bodymessage = `Full Name: ${fullname.value} <br> Phone: ${phone.value} <br> Email: ${email.value} <br> Message: ${message.value}`;
+            Email.send({
+                Host: "smtp.elasticemail.com",
+                Username: "midbrainsacademy@gmail.com",
+                Password: "954CDE282D02FF63F997AB0E1D33D2F4A2BD",
+                To: 'midbrainsacademy@gmail.com',
+                From: "midbrainsacademy@gmail.com",
+                Subject: "Contact form",
+                Body: bodymessage
+            }).then(
+                message => {
+                    if (message === "OK") {
+                        Swal.fire({
+                            title: "Success!",
+                            text: "Message Sent Successfully!",
+                            icon: "success"
+                        });
+                    }
+                }
+            );
         }
-      }
-        
-    );
-}
 
-form.addEventListener("submit", (e)=>{
-    e.preventDefault();
-    sendEmail();
-})
+        // Attach the event listener to the current form
+        form.addEventListener("submit", (e) => {
+            e.preventDefault();
+            sendEmail();
+        });
+    } else {
+        console.error("One or more input fields not found in form:", form);
+    }
+});
+
 
 
 
 
 
 // ==================================================================
+// Select all forms with the class "footer-form"
+const footerForms = document.querySelectorAll(".footer-form");
 
+// Loop through each form and attach the event listener
+footerForms.forEach((footerForm) => {
+    // Select the phone input within the current form
+    const commonphone = footerForm.querySelector("#commonphone");
 
-const footerform = document.querySelector(".footer-form");
-const commonphone = document.getElementById("commonphone");
-
-function sendEmail2(){
-    const bodymessage = ` Phone: ${commonphone.value} `
-    Email.send({
-        Host : "smtp.elasticemail.com",
-        Username : "midbrainsacademy@gmail.com",
-        Password : "954CDE282D02FF63F997AB0E1D33D2F4A2BD",
-        To : 'midbrainsacademy@gmail.com',
-        From : "midbrainsacademy@gmail.com",
-        Subject : "Contact form",
-        Body : bodymessage
-    }).then(
-      message => {
-        if (message == "OK"){
-            Swal.fire({
-                title: "Success!",
-                text: "Message Sent Successfully!",
-                icon: "success"
-              });
+    // Ensure the input field exists
+    if (commonphone) {
+        function sendEmail2(){
+            const bodymessage = `Phone: ${commonphone.value}`;
+            Email.send({
+                Host: "smtp.elasticemail.com",
+                Username: "midbrainsacademy@gmail.com",
+                Password: "954CDE282D02FF63F997AB0E1D33D2F4A2BD",
+                To: 'midbrainsacademy@gmail.com',
+                From: "midbrainsacademy@gmail.com",
+                Subject: "Contact form",
+                Body: bodymessage
+            }).then(
+                message => {
+                    if (message === "OK"){
+                        Swal.fire({
+                            title: "Success!",
+                            text: "Message Sent Successfully!",
+                            icon: "success"
+                        });
+                    }
+                }
+            );
         }
-      }
-        
-    );
-}
 
-footerform.addEventListener("submit", (e)=>{
-    e.preventDefault();
-    sendEmail2();
-})
+        // Attach the event listener to the current form
+        footerForm.addEventListener("submit", (e) => {
+            e.preventDefault();
+            sendEmail2();
+        });
+    } else {
+        console.error("Phone input field not found in form:", footerForm);
+    }
+});

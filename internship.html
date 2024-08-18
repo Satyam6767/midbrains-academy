@@ -205,32 +205,32 @@
                                     <span>Register Now</span>
                                 </div>
                                 <div class="main-form">
-                                    <form action="sendmail1.php" method="post" data-toggle="validator" class=""
+                                    <form  method="post"  class=""
                                         novalidate="true">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="single-form form-group has-error has-danger">
-                                                    <input name="name" type="text" placeholder="Name"
-                                                        data-error="Name is required." required="required">
+                                                    <input name="name" id="name" type="text" placeholder="Name"
+                                                        data-error="Name is required." required>
                                                 </div> <!-- single form -->
                                             </div>
                                             <div class="col-md-12">
                                                 <div class="single-form form-group has-error has-danger">
-                                                    <input name="email" type="email" placeholder="Email"
-                                                        data-error="Valid email is required." required="required">
+                                                    <input name="email" id="email" type="email" placeholder="Email"
+                                                        data-error="Valid email is required." required>
                                                 </div> <!-- single form -->
                                             </div>
                                             <div class="col-md-12">
                                                 <div class="single-form form-group has-error has-danger">
-                                                    <input name="phone" type="text" placeholder="Phone"
-                                                        data-error="Phone is required." required="required">
+                                                    <input name="phone" id="phone" type="text" placeholder="Phone"
+                                                        data-error="Phone is required." required>
                                                 </div> <!-- single form -->
                                             </div>
                                             <div class="col-md-12">
                                                 <div class="single-form form-group has-error has-danger">
-                                                    <textarea name="message" placeholder="Message"
+                                                    <textarea name="message" id="message" placeholder="Message"
                                                         data-error="Please, leave us a message."
-                                                        required="required"></textarea>
+                                                        ></textarea>
                                                     <!-- <div class="help-block with-errors"><ul class="list-unstyled"><li>Please, leave us a message.</li></ul></div> -->
                                                 </div> <!-- single form -->
                                             </div>
@@ -592,6 +592,11 @@
     <!--End of Main Wrapper Area-->
 
 
+
+    <script src="https://smtpjs.com/v3/smtp.js">
+        </script>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <!-- jquery
 		============================================ -->
